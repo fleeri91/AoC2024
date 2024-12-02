@@ -1,7 +1,11 @@
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 
-const readInput = (day: string): string => {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const readInput = (day) => {
   const inputPath = path.join(__dirname, `input.txt`);
   try {
     return fs.readFileSync(inputPath, "utf8");
@@ -17,7 +21,7 @@ const readInput = (day: string): string => {
  * @param rawInput
  * @returns
  */
-const parseInput = (rawInput: string): any => {
+const parseInput = (rawInput) => {
   return rawInput.trim().split("\n");
 };
 
@@ -27,7 +31,7 @@ const parseInput = (rawInput: string): any => {
  * @param parsedInput
  * @returns
  */
-const solution = (parsedInput: any): any => {
+const solution = (parsedInput) => {
   return "Solution 1 result";
 };
 

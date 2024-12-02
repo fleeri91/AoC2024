@@ -2,17 +2,14 @@
   "name": "aoc2024",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "create": "node day-setup.js"
+    "create": "node day-setup.js",
+    "day": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/node": "^22.10.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.7.2"
-  }
+  "description": ""
 }
